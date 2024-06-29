@@ -1,4 +1,4 @@
-# 🎥 CNN for comparison of human faces
+# 📷 CNN for comparison of human faces
 
 ## 🚀 Introduction
 Welcome to our project on **Human faces comparison**! In this project, we analyze a dataset of images depicting various human faces. Our goal is to use a neural network for comparison, extract features using convolution and pooling, and make predictions based on the similarity of faces.
