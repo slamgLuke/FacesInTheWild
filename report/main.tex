@@ -1,0 +1,60 @@
+% Documentos
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+% Packages
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{placeins}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+
+    % 1. Basic information
+    \title{Faces in the Wild\\}
+    \author{Lucas Carranza (100\%), Kalos Lazo (100\%), David Herencia (100\%), Lenin Chavez (100\%)}
+    \maketitle
+
+    % 2. Introduction: Project description.
+    \section{Introducción}
+    El siguiente trabajo tiene como objetivo exponer nuestro desarrollo de un sistema de verificación de rostros a partir de un dataset que alberga distintas imágenes de distintas personas con una expresión determinada. Nuestra tarea será determinar si dos imágenes de rostros pertenecen a la misma persona. Este proyecto es posible de implementarse en diferentes campos: \textit{seguridad, etiquetado automático de fotos, entre otros más}. Así mismo, se indica que el conjunto de datos propuesto alberga alrededor de $13000$ imágenes de rostros etiquetados, donde además $1680$ rostros tienen una misma o distn una etiquetada con el nombre de la persona que aparece en la foto. Además de las personas representadas, $1680$ de las personas cuentan con dos o más fotografía distintas. Nuestro principal reto será poder tratar con imágenes que cuenten con diversos actores, lo que afectaría a nuestra capacidad de reconocimiento, luces ambientales que afecten al reconocimiento correcto de los patrones, expresiones faciles que dificulten su reconocimiento, entre otros factores.
+
+    % 3. Dataset: Exploration and analysis of the dataset.
+    \section{Conjunto de Datos}
+    Para proceder con nuestro análisis de datos lo primero es cargar nuestra data de entrenamiento y testing. Esto nos permitirá saber qué información vamos a necesitar y usar para trabajar, además de si es necesario hacer alguna modificación para adaptar nuestro modelo. Dicho así inicialmente notamos que la data de entrenamiento tenía una sola columna denominada \verb|image1_image2| que brindaba el identificador de la imagen correspondiente ubicada en la carpeta \verb|images|. Por otro lado, se brindaba otra columna llamada \verb|label| la cual tenía solo dos posibles valores \verb|diff| y \verb|same| que indicaba si ambas imágenes compartían los mismos rostros  o si estos diferían respectivamente. Una vez cargada la data y analizada se decidió crear dos columnas: \verb|image1| e \verb|image2|, lo que nos permitirá separar la cargar y trabajar de manera más comoda que de manera previa, además se optó por modificar el indicador de similitud \verb|label| con dos posibles valores: $1$ y $0$ para indicar que son iguales ó distintos rostros respectivamente. Por último el dataset final cuenta con $2200$ filas de las cuales está dividido de forma equitativa $1100$ las imágenes identificadas como similares y negativas, no se hallaron valores nulos.
+
+    \begin{table}[htbp]
+        \caption{Descripción de Variables en Dataset}
+        \begin{center}
+            \begin{tabular}{|l|l|}\hline
+            \textbf{Variable} & \textbf{Descripción} \\\hline
+            \texttt{image1} & Identificador de imagen 1 a comparar.\\\hline
+            \texttt{image2} & Identificador de imagen 2 a comparar.\\\hline
+            \texttt{label} & Indica igualdad (1) ó diferencia (0) de las imágenes.\\\hline
+            \end{tabular}
+            \label{tab1}
+        \end{center}
+    \end{table}
+
+    % 4. Methodology: Explanation of the model, loss functions, and regularization techniques.
+    \section{Metodología}
+    
+
+    % 5. Implementation: Include the link to Colab or GitHub where the implementation can be found
+    \section{Implementación}
+
+    % 6. Experimentation: Present results with graphs and/or tables
+    \section{Experimentación}
+
+    % 7. Discussion: Interpretation of the obtained results and their relationship with the learned theory.
+    \section{Discusión}
+
+    % 8. Conclusions: Summary of results, limitations, and recommendations.
+    \section{Conclusiones}
+
+\end{document}
