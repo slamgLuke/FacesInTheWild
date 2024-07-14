@@ -15,6 +15,7 @@ RandomProjectionSearch.py
 __pycache__/
 *.py[cod]
 *$py.class
+*.virtual_documents/
 
 # C extensions
 *.so
