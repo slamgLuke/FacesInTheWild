@@ -5,6 +5,7 @@ node_modules/
 .ipynb_checkpoints
 *.tsbuildinfo
 .virtual_documents/
+best_model.pth
 
 RandomProjectionSearch.py
 
