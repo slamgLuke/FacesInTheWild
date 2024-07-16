@@ -30,7 +30,7 @@ We used a subset of the **Human Action Recognition** dataset due to practical an
 - Diff (0)
 
 ## 🛠️ Feature Extraction
-We utilized the CNN block to extract features using AlexNet, ResNet-50, ResNet-152 pretrained on Imagenet1k_v, and FaceNet (based on the Inception model) pretrained on VGGFace2 due to their superior accuracy and the hardware constraints preventing us from retraining the majority of FaceNet.
+We utilized the CNN block to extract features using AlexNet, ResNet-50, ResNet-152 pretraineds on Imagenet1k_v1, and FaceNet (based on the Inception model) pretrained on VGGFace2 due to their superior accuracy and the hardware constraints preventing us from retraining the majority of FaceNet.
 
 ## 🧠 Network Architectures
 
@@ -51,7 +51,7 @@ For the Siamese network, we used the binary cross entropy loss function, optimiz
 We conducted a series of experiments to find the best combination of dataset preprocessing, CNN architecture, and network hyperparameters. The optimization was based on metrics like accuracy, precision, recall, and F1-score.
 
 ## 💻 Implementation
-Our implementation is available in the [GitHub repository](https://github.com/slamgLuke/FacesInTheWild/tree/main). Check out the **models** folder for the code.
+Our implementation is available in the [GitHub repository](https://github.com/slamgLuke/FacesInTheWild/tree/main). Check out the **jupyter notebooks** for the code.
 
 ## 📈 Experimentation
 We experimented with different architectures to improve the comparison. Below are some key results:
