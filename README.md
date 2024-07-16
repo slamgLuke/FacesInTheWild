@@ -25,7 +25,7 @@ We used a subset of the **Human Action Recognition** dataset due to practical an
 - **Validation**: 440 videos
 - **Testing**: 1000 videos
 
-### 🎬 Labels
+### 📷! Labels
 - Same (1)
 - Diff (0)
 
