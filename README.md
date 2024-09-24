@@ -5,8 +5,8 @@ Welcome to our project on **Human faces comparison**! In this project, we analyz
 
 ## 👥 Authors
 - **Carranza Lucas** (202210073)
-- **Lazo Kalos** (201510170)
-- **Herencia David** (202010399)
+- **Lazo Kalos** (202210184)
+- **Herencia David** (202210408)
 - **Chavez Lenin** (202210090)
 
 ## 📄 Abstract
